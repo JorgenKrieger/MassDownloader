@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mass Downloader</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="appIdentifier">
+        <div id="appIcon">
+          <img src="./assets/img/download-cloud.svg">
+        </div>
+        <div id="appName">
+          <h1>Mass Downloader</h1>
+          <p>apps by <a href="https://www.labelnoir.me" target="_blank">Noir</a></p>
+        </div>
+      </div>
+    </header>
+    
+    <main class="center">
+      <p>Paste URLs or drop a .txt file with URLs.</p>
+    </main>
+    
+    <footer>
+      <button id="reset" data-title="Reset download list" disabled><img src="./assets/img/retry.svg"></button>
+      <button id="download" disabled>Download 'em</button>
+    </footer>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

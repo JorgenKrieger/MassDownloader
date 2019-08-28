@@ -1,0 +1,43 @@
+button
+  height: 40px
+  line-height: 40px
+  cursor: pointer
+  transition: opacity .25s ease
+
+  border: none
+  background: none
+
+  &#download
+    width: 206px
+    color: $background
+
+    font:
+      weight: 600
+      size: 14px
+
+    background-image: linear-gradient(180deg, #414141 0%, #383838 100%)
+    background-image: linear-gradient(180deg, #EEEEEE 0%, #DDDDDD 100%)
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.40), 0 0 1px 0 rgba(0,0,0,0.20), inset 0 0 0 0 rgba($foreground,0.25), inset 0 1px 0 0 rgba($foreground,0.06)
+    border-radius: 2px
+
+  &#reset
+    margin-right: 20px
+
+    img
+      user-select: none
+
+      margin: 6px
+      height: 28px
+      width: 28px
+      object-fit: none
+      object-position: 0% 50%
+
+      transform-origin: 50% 50%
+      transition: all .25s ease
+
+    &:not([disabled]):hover img 
+        transform: rotate(45deg)
+
+  &:disabled
+    opacity: .2
+    cursor: default

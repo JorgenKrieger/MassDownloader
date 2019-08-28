@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none; }
+
+html,
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+html {
+  background: #0A0A0A; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: #0A0A0A; }
+
+aside {
+  height: 100vh; }
+
+header,
+aside {
+  padding: 25px 15px 15px;
+  -webkit-app-region: drag; }
+
+main {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 15px;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  main.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  padding-right: 75px;
+  display: flex;
+  justify-content: center;
+  background: #0A0A0A; }
+
+* {
+  color: #FFFFFF; }
+
+a {
+  text-decoration: none; }
+
+#appIdentifier {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  z-index: 10; }
+  #appIdentifier #appIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px; }
+  #appIdentifier #appName h1 {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.66); }
+  #appIdentifier #appName p {
+    font-weight: 500;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.33); }
+    #appIdentifier #appName p a {
+      font-weight: 700;
+      color: #FFFFFF; }
+
+button {
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+  border: none;
+  background: none; }
+  button#download {
+    width: 206px;
+    color: #0A0A0A;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(180deg, #414141 0%, #383838 100%);
+    background-image: linear-gradient(180deg, #EEEEEE 0%, #DDDDDD 100%);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4), 0 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0 rgba(255, 255, 255, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+    border-radius: 2px; }
+  button#reset {
+    margin-right: 20px; }
+    button#reset img {
+      user-select: none;
+      margin: 6px;
+      height: 28px;
+      width: 28px;
+      object-fit: none;
+      object-position: 0% 50%;
+      transform-origin: 50% 50%;
+      transition: all 0.25s ease; }
+    button#reset:not([disabled]):hover img {
+      transform: rotate(45deg); }
+  button:disabled {
+    opacity: 0.2;
+    cursor: default; }
+
+.list {
+  font-family: "SF Mono", "Operator Mono", monospace;
+  font-size: 12px; }
+  .list ul li {
+    list-style: none; }
+    .list ul li a {
+      color: rgba(255, 255, 255, 0.33); }
+      .list ul li a:hover {
+        text-decoration: underline; }
+
+footer img {
+  margin-right: 10px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

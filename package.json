@@ -1,0 +1,27 @@
+{
+  "name": "MassDownloader",
+  "version": "1.0.0",
+  "description": "An application for downloading multiple files at once.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . MassDownloader && cp assets/img/AppIcon.icns MassDownloader-darwin-x64/MassDownloader.app/Contents/Resources/electron.icns && mv MassDownloader-darwin-x64/MassDownloader.app 'MassDownloader-darwin-x64/Mass Downloader.app'"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^6.0.3"
+  },
+  "dependencies": {
+    "electron-packager": "^14.0.4",
+    "electron-pug": "^2.0.0"
+  }
+}

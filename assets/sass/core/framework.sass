@@ -1,0 +1,49 @@
+html
+  background: $background
+
+body
+  //overflow: hidden
+
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+header
+  width: 100vw
+  position: fixed
+  top: 0
+  background: $background
+
+aside
+  height: 100vh
+
+header,
+aside
+  padding: 25px 15px 15px
+  -webkit-app-region: drag
+
+main
+  flex-grow: 1
+  overflow: auto
+  padding: 15px
+  margin:
+    top: 70px
+    bottom: 70px
+
+  &.center
+    display: flex
+    justify-content: center
+    align-items: center
+
+footer
+  position: fixed
+  bottom: 0
+  width: 100%
+  padding: 15px
+  padding-right: 75px
+
+  display: flex
+  justify-content: center
+
+  background: $background
+  //background-image: linear-gradient(to bottom, rgba($background, 0), rgba($background, 1))
